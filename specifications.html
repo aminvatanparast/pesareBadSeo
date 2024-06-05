@@ -122,23 +122,32 @@
   </div>
   <div class="header-details">
     <div class="step">
-      <div class="step-item">
-        جستجوی بیمار
+      <div class="step-item active-step">
+        مشخصات فردی
       </div>
       <div class="step-item">
-        تشکیل پرونده
+        طرح درمان اولیه
       </div>
       <div class="step-item">
-        پرونده بیمار
+        طرح درمان قطعی
+      </div>
+      <div class="step-item">
+        پرونده پزشکی
+      </div>
+      <div class="step-item">
+        پرونده مالی
+      </div>
+      <div class="step-item">
+        اسناد پزشکی
+      </div>
+      <div class="step-item">
+        نسخه پزشک
+      </div>
+      <div class="step-item">
+        ارجاع به همکار
       </div>
       <div class="step-item">
         وقت دهی
-      </div>
-      <div class="step-item">
-        خدمات و تعرفه ها
-      </div>
-      <div class="step-item">
-        فروشگاه
       </div>
     </div>
   </div>
@@ -382,11 +391,14 @@
       </label>
       <input type="">
     </div>
-    <div class="input">
+    <div class="two-input">
       <label>
         افراد تحت تکفل
       </label>
-      <input type="">
+      <div class="two-input-container">
+        <input placeholder="........" type=""/>
+        <span>نفر</span>
+      </div>
     </div>
     <div class="input">
       <label>
@@ -423,11 +435,16 @@
       </label>
       <input type="">
     </div>
-    <div class="input">
+    <div class="two-input">
       <label>
         تعداد فرزند
       </label>
-      <input type="">
+      <div class="two-input-container">
+        <input placeholder="........" type=""/>
+        <span>پسر</span>
+        <input placeholder="........" type=""/>
+        <span>دختر</span>
+      </div>
     </div>
     <div class="input">
       <label>
@@ -483,7 +500,6 @@
       </label>
       <input type="">
     </div>
-
   </div>
   <div class="specifications-more-details">
     <div class="specifications-more-details-img">
@@ -533,6 +549,17 @@
       <input type="">
     </div>
   </div>
+</div>
+<div class="options">
+  <div>جدید</div>
+  <div>حذف</div>
+  <div>ویرایش</div>
+  <div>توضیحات تایپی</div>
+  <div>قلم نوری</div>
+  <div>خروجی</div>
+  <div>چاپ</div>
+  <div>ارجاء به</div>
+  <div>ذخیره</div>
 </div>
 <script>
   function openMenu() {

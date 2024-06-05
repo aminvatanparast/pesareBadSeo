@@ -33,3 +33,11 @@
   align-items: center;
   margin-bottom: 10px;
 }
+
+.specifications-more-details-star img {
+ width: 30px;
+}
+
+.specifications-more-details-star span {
+ font-size: .8rem;
+}
