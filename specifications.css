@@ -1,0 +1,35 @@
+.specifications {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 55px;
+  padding: 0 5%;
+}
+.specifications-items {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 15px;
+}
+.specifications-more-details {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.specifications-more-details input {
+  margin-bottom: 10px;
+}
+.more-height {
+  height: 100px;
+}
+.specifications-more-details-img {
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+}
+.specifications-more-details-star {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}

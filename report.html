@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="global.css">
+  <title>گزارشات</title>
+</head>
+
+<body>
+<header>
+  <div class="header container">
+    <div class="header-logo">
+      <div class="header-logo-detail">
+        <img src="assets/3.png">
+        <span>نرم افزار کلینیکی طبیبان</span>
+        <a href="tel:09330938099">Tel : 02634213006</a>
+        <div class="menu">
+          <div class="menu-icon">
+            <img  onclick="openMenu()" alt="menu" src="assets/menu.svg">
+            <span class="menu-name">
+          کیک نیکان
+        </span>
+            <img onclick="closeMenu()" alt="menu" src="assets/arrow.png">
+          </div>
+          <div class="toggle-menu menu-list">
+            <ul>
+              <li>پذیرش</li>
+              <li>خدمانت و تعرفه ها</li>
+              <li>انبار</li>
+              <li>پذیرش</li>
+              <li>فروشگاه</li>
+              <li>پذیرش</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <img src="assets/search.svg">
+        <input placeholder="جستجوی بیمار" type="search">
+      </div>
+    </div>
+
+    <div class="header-middle">
+      <div class="header-middle-page">
+      <span>
+        نام مرکز و لوگوی مشتری
+      </span>
+        <strong>نشانی صفحه</strong>
+      </div>
+
+    </div>
+    <div class="header-user">
+      <div class="header-user-details">
+        <div class="date">
+          <img alt="date" src="assets/date1.png"/>
+          <img alt="date" src="assets/date2.png"/>
+          <div>
+            شنبه 1 خرداد
+          </div>
+        </div>
+
+        <div class="avatar">
+          <div class="alarm">
+            <span>
+              30
+            </span>
+            <img alt="alarm" src="assets/bell.png"/>
+          </div>
+          <img alt="avatar" src="assets/1.jpg"/>
+          <div>
+            امین وطن پرست
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header-btns">
+        <button>
+          <img src="assets/off.png"/>
+          خروج
+        </button>
+        <div class="header-btns-row">
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+        </div>
+        <button onclick="toggleChat()" >
+          چت آنلاین
+          <img src="assets/chat.png"/>
+        </button>
+        <div class="chat-list chat-hide">
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-details">
+    <div class="step">
+      <div class="step-item">
+        جستجوی بیمار
+      </div>
+      <div class="step-item">
+        تشکیل پرونده
+      </div>
+      <div class="step-item">
+        پرونده بیمار
+      </div>
+      <div class="step-item">
+        وقت دهی
+      </div>
+      <div class="step-item">
+        خدمات و تعرفه ها
+      </div>
+      <div class="step-item">
+        فروشگاه
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="container main">
+  <div class="report-list">
+    <div  onclick="openModal()"  class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          بیماران امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          درمان شده
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          در انتظار
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          کنسلی
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          ویزیت هاي امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          ویزیت در انتظار
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          طرح درمان اولیه
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          طرح درمان قطعی
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          معرفین امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          قرار داد ها
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          سفیران
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          آزاد
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          لابراتواري امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          تحویلی
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          قالبگیري مجدد
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          مرجوعی
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          صندوق امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          وام
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          نقدي
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          جمع کل
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          درمان هاي با تاخیر
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          تاخیر بیمار
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          تاخیر پزشک
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          تاخیر پذیرش
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          ویزیت هاي بلاتکلیف
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          قرار داد ها
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          سفیران
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          آزاد
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+    <div  onclick="openModal()" class="report-box">
+      <div class="report-box-head">
+        <div class="report-box-head-title">
+          گزارشات امروز
+        </div>
+        <div class="report-box-head-value">
+          28
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          مالـی
+        </div>
+        <div class="report-box-body-value">
+          17
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          پذیرش
+        </div>
+        <div class="report-box-body-value">
+          8
+        </div>
+      </div>
+      <div class="report-box-body">
+        <div class="report-box-body-title">
+          سایـر
+        </div>
+        <div class="report-box-body-value">
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div>جدید</div>
+    <div>حذف</div>
+    <div>ویرایش</div>
+    <div>توضیحات تایپی</div>
+    <div>قلم نوری</div>
+    <div>خروجی</div>
+    <div>چاپ</div>
+    <div>ارجاء به</div>
+    <div>ذخیره</div>
+  </div>
+  <div onclick="closeModal()" class="modal modal-hide">
+     <div class="modal-box">
+       <table>
+         <thead>
+           <th>ردیف</th>
+           <th>مشخصات بیمار</th>
+           <th>شرح درمان</th>
+           <th>وقـت درمان</th>
+           <th>تاخیر در درمان</th>
+           <th>هزینه درمان</th>
+           <th>نارضایتی بیمار</th>
+           <th>نتیجه</th>
+         </thead>
+         <tbody>
+          <tr class="yellow">
+            <td>1</td>
+            <td>کیوان رفیعی</td>
+            <td> اندو 3 کانال</td>
+            <td>13:30</td>
+            <td>0 دقیقه</td>
+            <td>18/000/000</td>
+            <td>تاخیر همیشگی درمان</td>
+            <td>درمان شد</td>
+          </tr>
+          <tr class="red">
+            <td>1</td>
+            <td>کیوان رفیعی</td>
+            <td> اندو 3 کانال</td>
+            <td>13:30</td>
+            <td>0 دقیقه</td>
+            <td>18/000/000</td>
+            <td>تاخیر همیشگی درمان</td>
+            <td>درمان شد</td>
+          </tr>
+          <tr class="green">
+            <td>1</td>
+            <td>کیوان رفیعی</td>
+            <td> اندو 3 کانال</td>
+            <td>13:30</td>
+            <td>0 دقیقه</td>
+            <td>18/000/000</td>
+            <td>تاخیر همیشگی درمان</td>
+            <td>درمان شد</td>
+          </tr>
+         </tbody>
+       </table>
+     </div>
+  </div>
+</section>
+<script>
+  function openMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.add("show-menu")
+  }
+
+  function closeMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.remove("show-menu")
+  }
+
+  function openModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.add("modal-show")
+  }
+  function closeModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.remove("modal-show")
+  }
+  function toggleChat() {
+    let chat = document.querySelector(".chat-list");
+    chat.classList.remove("chat-hide")
+    chat.classList.add("chat-show")
+  }
+</script>
+</body>
+</html>

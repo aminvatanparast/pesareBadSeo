@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="specifications.css">
+  <title>مشخصات فردی</title>
+</head>
+<body>
+<header>
+  <div class="header container">
+    <div class="header-logo">
+      <div class="header-logo-detail">
+        <img src="assets/3.png">
+        <span>نرم افزار کلینیکی طبیبان</span>
+        <a href="tel:09330938099">Tel : 02634213006</a>
+        <div class="menu">
+          <div class="menu-icon">
+            <img  onclick="openMenu()" alt="menu" src="assets/menu.svg">
+            <span class="menu-name">
+          کیک نیکان
+        </span>
+            <img onclick="closeMenu()" alt="menu" src="assets/arrow.png">
+          </div>
+          <div class="toggle-menu menu-list">
+            <ul>
+              <li>پذیرش</li>
+              <li>خدمانت و تعرفه ها</li>
+              <li>انبار</li>
+              <li>پذیرش</li>
+              <li>فروشگاه</li>
+              <li>پذیرش</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <img src="assets/search.svg">
+        <input placeholder="جستجوی بیمار" type="search">
+      </div>
+    </div>
+
+    <div class="header-middle">
+      <div class="header-middle-page">
+      <span>
+        نام مرکز و لوگوی مشتری
+      </span>
+        <strong>نشانی صفحه</strong>
+      </div>
+
+    </div>
+    <div class="header-user">
+      <div class="header-user-details">
+        <div class="date">
+          <img alt="date" src="assets/date1.png"/>
+          <img alt="date" src="assets/date2.png"/>
+          <div>
+            شنبه 1 خرداد
+          </div>
+        </div>
+
+        <div class="avatar">
+          <div class="alarm">
+            <span>
+              30
+            </span>
+            <img alt="alarm" src="assets/bell.png"/>
+          </div>
+          <img alt="avatar" src="assets/1.jpg"/>
+          <div>
+            امین وطن پرست
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header-btns">
+        <button>
+          <img src="assets/off.png"/>
+          خروج
+        </button>
+        <div class="header-btns-row">
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+        </div>
+        <button onclick="toggleChat()" >
+          چت آنلاین
+          <img src="assets/chat.png"/>
+        </button>
+        <div class="chat-list chat-hide">
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-details">
+    <div class="step">
+      <div class="step-item">
+        جستجوی بیمار
+      </div>
+      <div class="step-item">
+        تشکیل پرونده
+      </div>
+      <div class="step-item">
+        پرونده بیمار
+      </div>
+      <div class="step-item">
+        وقت دهی
+      </div>
+      <div class="step-item">
+        خدمات و تعرفه ها
+      </div>
+      <div class="step-item">
+        فروشگاه
+      </div>
+    </div>
+  </div>
+</header>
+<div class="specifications">
+  <div class="specifications-items">
+    <div class="input">
+      <label>
+         <span class="necessary">
+           *
+         </span>
+        شماره پرونده
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        هشدار پزشکی
+      </label>
+      <input class="back-is-red" type="">
+    </div>
+    <div class="select ">
+      <label>وضعیت صورت حساب</label>
+      <select class="back-is-gray">
+        <option>در حال انجام</option>
+        <option>انجام شده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        نام
+      </label>
+      <input type="">
+    </div>
+    <div class="select">
+      <label>گروه خونی</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="select">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        معرف
+      </label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        نام خانوادگی
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        تاریخ تشکیل پرونده
+      </label>
+      <input type="">
+    </div>
+    <div class="select">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        بیمه
+      </label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="radio">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        جنسیت
+      </label>
+      <div class="radio-group">
+        <input class="radio-input" name="radio-group" id="radio1" type="radio">
+        <label class="radio-label" for="radio1">
+          <span class="radio-inner-circle"></span>
+          مرد
+        </label>
+        <input class="radio-input" name="radio-group" id="radio2" type="radio">
+        <label class="radio-label" for="radio2">
+          <span class="radio-inner-circle"></span>
+          زن
+        </label>
+      </div>
+    </div>
+    <div class="select">
+      <label>میزان تحصیلات</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="select">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        طریقه آشنایی با مرکز
+      </label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        کد ملی
+      </label>
+      <input type="">
+    </div>
+    <div class="select">
+      <label>شغل</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        اعتبار مالی بیمار
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        تاریخ تولد
+      </label>
+      <input type="">
+    </div>
+    <div class="select">
+      <label>ملیت</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="select">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        مشکلات درمان های قبلی
+      </label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        سن بیمار
+      </label>
+      <input type="">
+    </div>
+    <div class="select">
+      <label>مذهب</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="select">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        حساسیت دارویی</label>
+      <select>
+        <option>م</option>
+        <option>اده</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        تلفن همراه
+      </label>
+      <input type="">
+    </div>
+    <div class="radio">
+      <label>
+        سرپرست خانواده
+      </label>
+      <div class="radio-group">
+        <input class="radio-input" name="family" id="family1" type="radio">
+        <label class="radio-label" for="family1">
+          <span class="radio-inner-circle"></span>
+          هستم
+        </label>
+        <input class="radio-input" name="family" id="family2" type="radio">
+        <label class="radio-label" for="family2">
+          <span class="radio-inner-circle"></span>
+          نیستم
+        </label>
+      </div>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        چه بیماري هایی دارید
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        تلفن اضطراري
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        افراد تحت تکفل
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        آیا باردار هستید
+      </label>
+      <input type="">
+    </div>
+    <div class="radio">
+      <label>
+        وضعیت تاهل
+      </label>
+      <div class="radio-group">
+        <input class="radio-input" name="mar" id="mar1" type="radio">
+        <label class="radio-label" for="mar1">
+          <span class="radio-inner-circle"></span>
+          مجرد
+        </label>
+        <input class="radio-input" name="mar" id="mar2" type="radio">
+        <label class="radio-label" for="mar2">
+          <span class="radio-inner-circle"></span>
+          متاهل
+        </label>
+      </div>
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        نام بازنشسته
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        تعداد فرزند
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        نشانی محل کار
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        دارو هاي مصرفی
+      </label>
+      <input type="">
+    </div>
+    <div class="input two-row">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        نشانی منزل
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        دندانپزشک قبلی
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        تلفن منزل
+      </label>
+      <input type="">
+    </div>
+    <div class="input two-row">
+      <label>
+        تلفن محل کار
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        علت مراجعه به مرکز
+      </label>
+      <input type="">
+    </div>
+
+  </div>
+  <div class="specifications-more-details">
+    <div class="specifications-more-details-img">
+       <span class="necessary-img">
+           *
+         </span>
+      <img src="assets/0.jpg"/>
+    </div>
+    <div class="specifications-more-details-star">
+      <span>وضعیت پرداخت</span>
+      <img src="assets/blue-star.png"/>
+      <img src="assets/blue-star.png"/>
+      <img src="assets/blue-star.png"/>
+      <img src="assets/blue-star.png"/>
+      <img src="assets/blue-star.png"/>
+    </div>
+    <div class="specifications-more-details-star">
+      <span>وضعیت رفتاری</span>
+      <img src="assets/red-star.png"/>
+      <img src="assets/red-star.png"/>
+      <img src="assets/red-star.png"/>
+      <img src="assets/red-star.png"/>
+      <img src="assets/red-star.png"/>
+    </div>
+    <div class="input more-height">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        اثرانگشت
+      </label>
+      <input type="">
+    </div>
+    <div class="input more-height">
+      <label>
+        <span class="necessary">
+           *
+         </span>
+        امضاء
+      </label>
+      <input type="">
+    </div>
+    <div class="input">
+      <label>
+        اطلاعات بیشتر
+      </label>
+      <input type="">
+    </div>
+  </div>
+</div>
+<script>
+  function openMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.add("show-menu")
+  }
+
+  function closeMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.remove("show-menu")
+  }
+
+  function openModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.add("modal-show")
+  }
+  function closeModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.remove("modal-show")
+  }
+  function toggleChat() {
+    let chat = document.querySelector(".chat-list");
+    chat.classList.remove("chat-hide")
+    chat.classList.add("chat-show")
+  }
+</script>
+</body>
+</html>
