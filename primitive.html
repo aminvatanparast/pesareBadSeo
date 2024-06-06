@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="specifications.css">
+  <link rel="stylesheet" href="primitive.css">
+  <title>طرح درمان اولیه</title>
+</head>
+<body>
+<header>
+  <div class="header container">
+    <div class="header-logo">
+      <div class="header-logo-detail">
+        <img src="assets/3.png">
+        <span>نرم افزار کلینیکی طبیبان</span>
+        <a href="tel:09330938099">Tel : 02634213006</a>
+        <div class="menu">
+          <div class="menu-icon">
+            <img  onclick="openMenu()" alt="menu" src="assets/menu.svg">
+            <span class="menu-name">
+          کیک نیکان
+        </span>
+            <img onclick="closeMenu()" alt="menu" src="assets/arrow.png">
+          </div>
+          <div class="toggle-menu menu-list">
+            <ul>
+              <li>پذیرش</li>
+              <li>خدمانت و تعرفه ها</li>
+              <li>انبار</li>
+              <li>پذیرش</li>
+              <li>فروشگاه</li>
+              <li>پذیرش</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <img src="assets/search.svg">
+        <input placeholder="جستجوی بیمار" type="search">
+      </div>
+    </div>
+
+    <div class="header-middle">
+      <div class="header-middle-page">
+      <span>
+        نام مرکز و لوگوی مشتری
+      </span>
+        <strong>نشانی صفحه</strong>
+      </div>
+
+    </div>
+    <div class="header-user">
+      <div class="header-user-details">
+        <div class="date">
+          <img alt="date" src="assets/date1.png"/>
+          <img alt="date" src="assets/date2.png"/>
+          <div>
+            شنبه 1 خرداد
+          </div>
+        </div>
+
+        <div class="avatar">
+          <div class="alarm">
+            <span>
+              30
+            </span>
+            <img alt="alarm" src="assets/bell.png"/>
+          </div>
+          <img alt="avatar" src="assets/1.jpg"/>
+          <div>
+            امین وطن پرست
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header-btns">
+        <button>
+          <img src="assets/off.png"/>
+          خروج
+        </button>
+        <div class="header-btns-row">
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+          <button class="noBorder">
+            <img src="assets/full.png"/>
+          </button>
+        </div>
+        <button onclick="toggleChat()" >
+          چت آنلاین
+          <img src="assets/chat.png"/>
+        </button>
+        <div class="chat-list chat-hide">
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+          <div class="chat-list-item">
+            <img src="assets/1.jpg">
+            <span>
+              امین وطن
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-details">
+    <div class="step">
+      <div class="step-item">
+        مشخصات فردی
+      </div>
+      <div class="step-item  active-step">
+        طرح درمان اولیه
+      </div>
+      <div class="step-item">
+        طرح درمان قطعی
+      </div>
+      <div class="step-item">
+        پرونده پزشکی
+      </div>
+      <div class="step-item">
+        پرونده مالی
+      </div>
+      <div class="step-item">
+        اسناد پزشکی
+      </div>
+      <div class="step-item">
+        نسخه پزشک
+      </div>
+      <div class="step-item">
+        ارجاع به همکار
+      </div>
+      <div class="step-item">
+        وقت دهی
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="primitive-btn">
+  <button onclick="changeTab(0)" class="active">
+    تخصصی
+  </button>
+  <button onclick="changeTab(1)">
+    عمومی
+  </button>
+</div>
+<div class="professional show">
+ <div class="professional-badge">
+   تخصصی
+ </div>
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>جراحی ایمپلنت</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>ارتودنسی</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>ری اندو</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>کامپوزیت</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>لمینت</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>اطفال</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>پریو</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+ <div class="professional-item">
+   <div class="select-icon">
+     <select>
+       <option>سایر</option>
+       <option>اده</option>
+     </select>
+   </div>
+ </div>
+
+</div>
+<div class="general hide">
+ <div class="professional-badge">
+   عمومی
+ </div>
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>پروتز متحرك</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>کشیدن</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>جراحی</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>ترمیم</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>عصب کشی</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>پست و روکش</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>رادیو گرافی</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="professional-item">
+    <div class="select-icon">
+      <select>
+        <option>سایر</option>
+        <option>اده</option>
+      </select>
+    </div>
+  </div>
+
+</div>
+<div class="line">
+  <span>دائمی</span>
+  <div class="color">
+    <div></div>
+    <div></div>
+  </div>
+  <span>شیری</span>
+</div>
+<div class="schematic">
+  <strong>نماي شماتیک فک بیمار</strong>
+  <div class="jaw-img">
+    <div class="jaw-img-item">
+      <div class="jaw-img-item-badge">
+        فک پایین
+      </div>
+      <img src="assets/7.jpg">
+    </div>
+    <div class="jaw-img-item">
+      <div class="jaw-img-item-badge">
+        فک بالا
+      </div>
+      <img src="assets/6.jpg">
+    </div>
+  </div>
+  <form>
+    <div class="primitive-list">
+      <div class="input">
+        <label>
+          شماره پرونده
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          مبلغ طرح درمان اولیه
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          سهم بیمه
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          نام دستیار
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          نــام بیمار
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          سهم وام طرح درمان
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          فرانشیز بیمار
+        </label>
+        <input type="">
+      </div>
+      <div class="input">
+        <label>
+          نام مشاور
+        </label>
+        <input type="">
+      </div>
+      <div class="select">
+        <label>نام پزشک</label>
+        <select>
+          <option>fsfs</option>
+          <option>sfsfsf</option>
+        </select>
+      </div>
+      <div class="input">
+        <label>
+          سهم نقدي طرح درمان
+        </label>
+        <input type="">
+      </div>
+      <div class="input two-col">
+        <label>
+          توضیحات
+        </label>
+        <input type="">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="options">
+  <div>جدید</div>
+  <div>حذف</div>
+  <div>ویرایش</div>
+  <div>توضیحات تایپی</div>
+  <div>قلم نوری</div>
+  <div>خروجی</div>
+  <div>چاپ</div>
+  <div>ارجاء به</div>
+  <div>ذخیره</div>
+</div>
+<script>
+  function openMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.add("show-menu")
+  }
+
+  function closeMenu() {
+    let modal = document.querySelector(".menu");
+    modal.classList.remove("toggle-menu")
+    modal.classList.remove("show-menu")
+  }
+
+  function toggleChat() {
+    let chat = document.querySelector(".chat-list");
+    chat.classList.remove("chat-hide")
+    chat.classList.add("chat-show")
+  }
+  function changeTab(tab) {
+    const buttons = document.querySelectorAll('.primitive-btn button');
+    const professional = document.querySelector('.professional');
+    const general = document.querySelector('.general');
+    if(tab === 0) {
+      professional.classList.add('show');
+      professional.classList.remove('hide');
+      general.classList.remove('show');
+      general.classList.add('hide');
+    } else {
+      professional.classList.remove('show');
+      professional.classList.add('hide');
+      general.classList.remove('hide');
+      general.classList.add('show');
+    }
+
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
+    buttons[tab].classList.add('active');
+  }
+</script>
+</body>
+</html>
